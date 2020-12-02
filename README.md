@@ -5,22 +5,28 @@
 # Arena Description:
  There are 2 paths (inner and outer square) and there are 4
 connecting paths of different colours joining them.
+
  Bot can change from outer path to inner path or vice versa. Bot
 is allowed to move in a clockwise direction only. The portion of
 the arena in black colour is restricted for the movement of the
 bot.
+
  There will be 3 shapes (square, circle and triangle) of 2
 different colours, distinguishing each block in 6 different ways.
 All shape colours might change but they will be distinguishable
 easily. The position of shapes in the final area will not be the
 same as the indicative pictures
+
  On the outermost path there will be 4 arrows at the end of
 connecting paths pointing in clockwise direction. These arrows
 mark the Starting Zone where the bot will be placed initially on
 any one of the arrows.
+
  The Centre of the arena is the home zone.
+
  The bot has to traverse the arena, complete a full round and
 finish at the home zone.
+
  A video feed from the overhead camera will be provided to the
 team. The team’s computer should autonomously instruct their
 bot throughout the arena using this feed.
@@ -46,3 +52,8 @@ the center, Then it should move to home via the
 connecting paths that it started on.
 7. On reaching home the bot should signal that it has finished
 the task.
+# Our Approach
+1. We used opencv(An opensource image processing library) to segment out different colour with their respective shape.
+2. Made a 2d array by giving unique numbers to each shape with its colour.
+3. We used dijikstra as a path finding algorithm.
+4. At last we used pybullet(opensource physics simulation library) to move the husky to the desired position.
