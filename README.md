@@ -2,7 +2,7 @@
 
 ![](arena.png)
 
-Arena Description:
+# Arena Description:
  There are 2 paths (inner and outer square) and there are 4
 connecting paths of different colours joining them.
  Bot can change from outer path to inner path or vice versa. Bot
@@ -24,7 +24,7 @@ finish at the home zone.
  A video feed from the overhead camera will be provided to the
 team. The team’s computer should autonomously instruct their
 bot throughout the arena using this feed.
-Game Procedure:
+# Game Procedure:
 1. The bot is placed at one of the Starting Zones.
 2. Team will be given an abbreviation which associate to
 specific colour and shape.
